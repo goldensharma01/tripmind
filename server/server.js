@@ -32,7 +32,7 @@ app.get('/', (req, res) => res.json({ message: 'TripMind API running' }));
 
 // Connect MongoDB and start server
 const MONGO_URI = process.env.MONGO_URI;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 console.log('Connecting to MongoDB...');
 console.log('URI starts with:', MONGO_URI ? MONGO_URI.substring(0, 30) : 'NOT FOUND');
